@@ -1,16 +1,8 @@
-![Logo](cp.png)
+# Portfolio Showcase 💻
 
-# Amine Portfolio Showcase 💻
-
-Welcome to **Amine's Portfolio Showcase**!  
-A modern **portfolio website** designed to showcase projects, skills, and personal work using **HTML, CSS, and JavaScript**.  
+Welcome to
+A modern designed to showcase projects, skills, and personal work using **Vite/React**.  
 It is fully **responsive**, interactive, and visually appealing across desktop, tablet, and mobile devices.
-
----
-
-## Live Demo 🚀
-
-You can view the live website here: [Live Demo](https://stalwart-baklava-8ed433.netlify.app/)
 
 ---
 
@@ -42,34 +34,6 @@ You can view the live website here: [Live Demo](https://stalwart-baklava-8ed433.
 - **CSS3** – Styling, responsive layouts, Flexbox & Grid  
 - **JavaScript (Vanilla JS)** – Interactivity and animations  
 - **Font Awesome / Boxicons** – Icons  
-- **AOS.js** – Scroll animations  
+- **AOS.js** – Scroll animations
+- **Vite / React** - Build project
 
----
-
-## License
-
-This project is licensed under the terms described in the [LICENSE](LICENSE) file.
-
----
-
-## 🚀 How to Use / Customize
-
-1. **Clone the repository:**
-
- ---
-
-## 📬 Contact
-
-- Email: aminehamzaoui1925@gmail.com   
-- Location: Boumerdès, Algeria  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-amine-hamzaoui-a2453a35b/)  
-- GitHub: [GitHub](https://github.com/Saboo24)  
-- Instagram: [Instagram](https://www.instagram.com/a__m.i.n__e/?utm_source=ig_web_button_share_sheet)
-
----
-
-Made with ❤️ by **Amine Hamzaoui**
-
-
-```bash
-git clone https://github.com/Saboo24/portfolio-showcase.git
