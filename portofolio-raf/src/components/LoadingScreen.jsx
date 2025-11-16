@@ -1,0 +1,24 @@
+import useLoadingScreen from "../hooks/loading/useLoadingScreen";
+
+export default function LoadingScreen() {
+    useLoadingScreen();
+    return (
+        <>
+            <div id="loading-screen">
+                <div class="loading-content">
+                    <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
+
+                    <h1 id="loading-text" class="hidden">MY PROFILE</h1>
+
+                    <div class="sub-icons">
+                    <i class="fa-brands fa-github fa-2x hidden"></i>
+                    <i class="fa-solid fa-code fa-2x hidden"></i>
+                    <i class="fa-solid fa-user fa-2x hidden"></i>
+                    </div>
+
+                    <h2 id="designer-text" class="hidden">Designed by Rflifhri</h2>
+                </div>
+            </div>
+        </>
+    );
+}
