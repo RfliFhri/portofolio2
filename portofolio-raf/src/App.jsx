@@ -12,6 +12,8 @@ import Services from './pages/Services'
 import BackToTop from './components/BackToTop'
 import useReveal from './hooks/animation/useReveal'
 import useHoverCard from './hooks/animation/useHoverCard'
+import Skills from './pages/Skills'
+import Testimonial from './pages/Testimonials'
 
 function App() {
   useReveal();
@@ -23,7 +25,9 @@ function App() {
         <Home/>
         <About/>
         <Projects/>
+        <Skills/>
         <Services/>
+        <Testimonial/>
         <Contact/>
         <Footer/>
         <BackToTop/>

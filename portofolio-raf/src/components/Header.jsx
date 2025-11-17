@@ -20,6 +20,10 @@ export default function Header() {
                             <a href="#project">Projects</a>
                         </li>
                         <li>
+                            <i class="fa-solid fa-layer-group"></i>
+                            <a href="#capabilities">Capabilities</a>
+                        </li>
+                        <li>
                             <i class="fa-solid fa-code"></i>
                             <a href="#services">services</a>
                         </li>

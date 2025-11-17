@@ -309,6 +309,7 @@ hr {
 
 .project-card {
   background: #fff;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -380,6 +381,109 @@ hr {
   border-radius: 25px;
 
 }
+
+/* section layout */
+.cap-section{
+  /* background: var(--bg); */
+  padding: 72px 18px;
+  color: #111827;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* header */
+.cap-header{
+  text-align: center;
+  margin-bottom: 36px;
+}
+.cap-header .kicker{
+  letter-spacing: .15em;
+  color: #6b7280;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.cap-header h2{
+  font-size: 32px;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.cap-header .lead{
+  color: #6b7280;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+/* grid */
+.cap-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+}
+
+/* card */
+.cap-card{
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(17,24,39,0.06);
+  padding: 28px;
+  text-align: center;
+  transition: transform .18s ease, box-shadow .18s ease;
+  border: 1px solid rgba(17,24,39,0.03);
+}
+.cap-card:focus,
+.cap-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(17,24,39,0.08);
+  outline: none;
+}
+
+/* icon */
+.cap-icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  color: #1e40af;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(14, 52, 165, 0.06), rgba(14,165,164,0.02));
+}
+
+/* title & desc */
+.cap-title{
+  font-size: 18px;
+  margin: 6px 0 8px;
+  font-weight: 700;
+}
+.cap-desc{
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* responsiveness */
+@media (max-width: 980px){
+  .cap-grid{ grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 560px){
+  .cap-section{ padding: 48px 12px; }
+  .cap-header h2{ font-size: 24px; }
+  .cap-grid{ grid-template-columns: 1fr; gap: 18px; }
+  .cap-card{ text-align: left; display: flex; gap: 18px; align-items: flex-start; padding: 20px; }
+  .cap-icon{ width: 56px; height: 56px; flex: 0 0 56px; }
+  .cap-desc{ font-size: 13px; }
+}
+
 
 .services{
     margin: 160px 200px;
@@ -467,6 +571,86 @@ hr {
 .service-card:hover p {
   color: #fff;
 }
+
+.testimonial-section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.role {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.show-more-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.show-more-btn:hover {
+  background: #4f46e5;
+}
+
 
 .contact{
     margin: 160px 200px;
