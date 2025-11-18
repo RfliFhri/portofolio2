@@ -1,0 +1,232 @@
+/* -----------------------
+   Base / Section layout
+   ----------------------- */
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --accent: #6366f1; /* your chosen purple */
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --card-radius: 14px;
+}
+
+/* section */
+.ts-section {
+  padding: 64px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.ts-header h2 {
+  font-size: 28px;
+  margin: 0 0 6px;
+  color: var(--text);
+}
+.ts-desc {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* swiper wrapper */
+.ts-swiper-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;      /* Vertically center arrows */
+  justify-content: center;
+  gap: 10px;
+}
+
+/* cards inside swiper */
+.ts-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 18px;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(12, 18, 31, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* header inside card */
+.ts-card-head {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.ts-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(99,102,241,0.12);
+}
+.ts-meta { text-align: left; }
+.ts-name { margin: 0; font-size: 16px; font-weight: 700; color: var(--text); }
+.ts-role { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
+
+/* message */
+.ts-message {
+  margin-top: 12px;
+  color: #111827;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* actions */
+.ts-actions { margin-top: 12px; display:flex; justify-content:center; gap:12px; }
+.ts-seeall {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid rgba(99,102,241,0.14);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.ts-seeall:hover { background: rgba(99,102,241,0.06); }
+
+/* Swiper navigation (arrows) styling */
+/* --- ARROW CUSTOM (OPSI A) --- */
+.custom-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.15); /* purple soft */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6366f1;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s;
+  flex-shrink: 0; /* biar tidak mengecil */
+}
+
+.custom-arrow:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+/* Atur ukuran arrow default Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+/* Hilangkan arrow default position */
+.swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+}
+
+/* pagination dots */
+.swiper-pagination-bullet {
+  background: rgba(17,24,39,0.12);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: var(--accent);
+}
+
+/* -----------------------
+   Modal (See All)
+   ----------------------- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(2,6,23,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 24px;
+}
+.modal-window {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 88vh;
+  background: var(--bg);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(15,23,42,0.06);
+}
+.modal-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+.modal-header h3 { margin:0; font-size:18px; color:var(--text); }
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* modal content - grid */
+.modal-content {
+  padding: 18px;
+  overflow: auto;
+}
+.modal-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.modal-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  padding: 14px;
+}
+.modal-row {
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.modal-avatar {
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  object-fit:cover;
+  border: 2px solid rgba(99,102,241,0.08);
+}
+.modal-name { margin:0; font-weight:700; font-size:15px; }
+.modal-role { margin:2px 0 0; font-size:13px; color:var(--muted); }
+.modal-msg { margin-top:10px; color:var(--text); font-size:14px; line-height:1.45; }
+
+/* modal footer */
+.modal-footer {
+  padding: 12px 18px;
+  border-top: 1px solid rgba(15,23,42,0.04);
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+}
+.modal-close-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(15,23,42,0.06);
+  background: transparent;
+  cursor: pointer;
+}
+
+/* responsive tweaks */
+@media (max-width: 720px) {
+  .ts-avatar { width:48px; height:48px; }
+  .ts-message { font-size: 13px; }
+  .modal-window { max-width: 94vw; }
+}

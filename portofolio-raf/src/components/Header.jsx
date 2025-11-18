@@ -25,7 +25,11 @@ export default function Header() {
                         </li>
                         <li>
                             <i class="fa-solid fa-code"></i>
-                            <a href="#services">services</a>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-address-card"></i>
+                            <a href="#testimonials">Testimonials</a>
                         </li>
                         <li>
                             <i class="fa-regular fa-envelope"></i>
