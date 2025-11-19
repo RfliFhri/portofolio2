@@ -1,25 +1,26 @@
 import React from "react";
 import SliderLoop from "../components/SliderLoop.jsx";
-import "./Capabilities.css";
+import "../assets/css/Capabilities.css";
 
 /**
  * Capabilities section
  * Place icons in public/icons/ and pass their paths below.
  */
 export default function Capabilities() {
+  const url = "../src/assets/img/capabilities/";
   const frontendIcons = [
-    "/icons/html.svg",
-    "/icons/css.svg",
-    "/icons/js.svg",
-    "/icons/react.svg",
-    "/icons/tailwind.svg",
+    url + "html.png",
+    url + "css.png",
+    url + "js.png",
+    url + "bootstrap.png",
+    url + "tailwind.png",
   ];
 
   const backendIcons = [
-    "/icons/php.svg",
-    "/icons/laravel.svg",
-    "/icons/mysql.svg",
-    "/icons/postman.svg",
+    url + "php.png",
+    url + "lrvl.png",
+    url + "mysql.png",
+    url + "postgre.png",
   ];
 
   const toolsIcons = [

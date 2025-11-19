@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import "../pages/Capabilities.css";
+import "../assets/css/Capabilities.css";
 
 export default function SliderLoop({ icons = [], duration = 20 }) {
   const trackRef = useRef(null);

@@ -96,10 +96,10 @@
 /* Swiper navigation (arrows) styling */
 /* --- ARROW CUSTOM (OPSI A) --- */
 .custom-arrow {
+  margin: 0 20px;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(99, 102, 241, 0.15); /* purple soft */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,8 +111,9 @@
 }
 
 .custom-arrow:hover {
-  background: #6366f1;
-  color: #fff;
+  width: 35px;
+  height: 35px;
+  color: #6366f1;
 }
 
 /* Atur ukuran arrow default Swiper */
