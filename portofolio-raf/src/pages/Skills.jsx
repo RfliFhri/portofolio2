@@ -24,10 +24,10 @@ export default function Capabilities() {
   ];
 
   const toolsIcons = [
-    "/icons/git.svg",
-    "/icons/github.svg",
-    "/icons/vscode.svg",
-    "/icons/cpanel.svg",
+    url + "git.png",
+    url + "vscode.png",
+    url + "postman.png",
+    url + "xampp.png",
   ];
 
   return (

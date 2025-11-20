@@ -13,20 +13,21 @@ import "../assets/css/testimonials-swiper.css";
  * - "See All" opens modal with full grid
  */
 export default function TestimonialsSwiper() {
+  const defaultProfil = "../src/assets/img/profile/default-avatar.jpg";
   const [showAll, setShowAll] = useState(false);
   const modalRef = useRef(null);
 
   const testimonials = [
-    { img: "/img/person1.jpg", name: "John Doe", role: "Frontend Dev", message: "Fast, clean code and great communication." },
-    { img: "/img/person2.jpg", name: "Sarah Johnson", role: "UI/UX Designer", message: "Detail oriented and reliable." },
-    { img: "/img/person3.jpg", name: "Michael Harris", role: "Software Engineer", message: "Solid backend implementations." },
-    { img: "/img/person4.jpg", name: "Emily Carter", role: "Project Manager", message: "Delivered before deadline with quality." },
-    { img: "/img/person5.jpg", name: "Alex Tan", role: "Founder", message: "Very easy to work with and proactive." },
-    { img: "/img/person6.jpg", name: "Nina Putri", role: "Product Owner", message: "Thoughtful solutions and clear explanations." },
-    { img: "/img/person7.jpg", name: "Rico S.", role: "CTO", message: "Good at breaking down complex problems." },
-    { img: "/img/person7.jpg", name: "Rico S.", role: "CTO", message: "Good at breaking down complex problems." },
-    { img: "/img/person7.jpg", name: "Rico S.", role: "CTO", message: "Good at breaking down complex problems." },
-    { img: "/img/person8.jpg", name: "Maya L.", role: "Marketing Lead", message: "Design + dev synergy was excellent." }
+    { img: defaultProfil, name: "John Doe", role: "Frontend Dev", message: "Fast, clean code and great communication." },
+    { img: defaultProfil, name: "Sarah Johnson", role: "UI/UX Designer", message: "Detail oriented and reliable." },
+    { img: defaultProfil, name: "Michael Harris", role: "Software Engineer", message: "Solid backend implementations." },
+    { img: defaultProfil, name: "Emily Carter", role: "Project Manager", message: "Delivered before deadline with quality." },
+    { img: defaultProfil, name: "Alex Tan", role: "Founder", message: "Very easy to work with and proactive." },
+    { img: defaultProfil, name: "Nina Putri", role: "Product Owner", message: "Thoughtful solutions and clear explanations." },
+    { img: defaultProfil, name: "Rico S.", role: "CTO", message: "Good at breaking down complex problems." },
+    { img: defaultProfil, name: "Rico S.", role: "CTO", message: "Good at breaking down complex problems." },
+    { img: defaultProfil, name: "Rico S.", role: "CTO", message: "Good at breaking down complex problems." },
+    { img: defaultProfil, name: "Maya L.", role: "Marketing Lead", message: "Design + dev synergy was excellent." }
     // add more if needed
   ];
 
@@ -81,7 +82,8 @@ export default function TestimonialsSwiper() {
               <SwiperSlide key={idx}>
                 <article className="ts-card" aria-label={`Testimonial from ${t.name}`}>
                   <div className="ts-card-head">
-                    <img src={t.img} alt={`${t.name} avatar`} className="ts-avatar" />
+                    
+                    <img src={t.img ? t.img : defaultProfil} alt={`${t.name} avatar`} className="ts-avatar" />
                     <div className="ts-meta">
                       <h3 className="ts-name">{t.name}</h3>
                       <p className="ts-role">{t.role}</p>
